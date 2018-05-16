@@ -2,6 +2,8 @@ from captcha.fields import CaptchaField
 from django import forms
 
 
+# 表单
+
 class UserForm(forms.Form):
     username = forms.CharField(label='用户名', max_length=128,
                                widget=forms.TextInput(attrs={'class': 'from login import models, forms'}))
